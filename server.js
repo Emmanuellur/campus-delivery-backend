@@ -9,7 +9,7 @@ app.use(cors({
   origin: [
     'http://localhost:5173',
     'http://localhost:5174',
-    'https://campus-delivery-frontend.vercel.app',
+    'https://campus-delivery-frontend-a9ody4mjo-emmanuellurs-projects.vercel.app',
     /\.vercel\.app$/
   ],
   credentials: true
