@@ -13,6 +13,7 @@ app.use('/api/auth',   require('./routes/auth'))
 app.use('/api/orders', require('./routes/orders'))
 app.use('/api/shops',  require('./routes/shops'))
 app.use('/api/smart', require('./routes/smart'))
+app.use('/api/admin', require('./routes/admin'))
 
 // Test route
 app.get('/', (req, res) => {
