@@ -6,13 +6,9 @@ require('dotenv').config()
 const app = express()
 
 app.use(cors({
-  origin: [
-    'http://localhost:5173',
-    'http://localhost:5174',
-    'https://campus-delivery-frontend-a9ody4mjo-emmanuellurs-projects.vercel.app',
-    /\.vercel\.app$/
-  ],
-  credentials: true
+  origin: '*',
+  methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }))
 app.use(express.json())
 
