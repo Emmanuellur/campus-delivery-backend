@@ -4,6 +4,7 @@ const shopSchema = new mongoose.Schema({
   name:     { type: String, required: true },
   category: { type: String, enum: ['food', 'pharmacy'], required: true },
   emoji:    { type: String, default: '🍽' },
+  image:    { type: String, default: '' },
   eta:      { type: Number, default: 15 },
   rating:   { type: Number, default: 4.0 },
   vendorId: { type: String, default: null },

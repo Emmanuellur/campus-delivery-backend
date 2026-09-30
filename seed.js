@@ -8,6 +8,7 @@ const shops = [
     name: 'Mama Put Canteen',
     category: 'food',
     emoji: '🍛',
+    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400',
     eta: 15,
     rating: 4.5,
     items: [
@@ -21,19 +22,21 @@ const shops = [
     name: 'Campus Pharmacy',
     category: 'pharmacy',
     emoji: '💊',
+    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400',
     eta: 10,
     rating: 4.8,
     items: [
       { name: 'Paracetamol (strip)', price: 150, time: 3 },
       { name: 'Vitamin C tablets',   price: 300, time: 3 },
       { name: 'Ibuprofen (strip)',    price: 200, time: 3 },
-      { name: 'Hand Sanitizer',      price: 500, time: 3 },
+      { name: 'Hand Sanitizer',       price: 500, time: 3 },
     ]
   },
   {
     name: 'Chukwu Kitchen',
     category: 'food',
     emoji: '🍲',
+    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?w=400',
     eta: 20,
     rating: 4.2,
     items: [
@@ -46,6 +49,7 @@ const shops = [
     name: 'QuickMeds Store',
     category: 'pharmacy',
     emoji: '🏥',
+    image: 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400',
     eta: 8,
     rating: 4.6,
     items: [
@@ -58,6 +62,7 @@ const shops = [
     name: 'Buka Express',
     category: 'food',
     emoji: '🍱',
+    image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400',
     eta: 25,
     rating: 4.0,
     items: [
@@ -70,6 +75,7 @@ const shops = [
     name: 'Freshy Bites',
     category: 'food',
     emoji: '🥙',
+    image: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400',
     eta: 18,
     rating: 4.3,
     items: [
@@ -84,13 +90,10 @@ const shops = [
 async function seed() {
   await mongoose.connect(process.env.MONGO_URI)
   console.log('Connected!')
-
   await Shop.deleteMany()
   console.log('Cleared old shops')
-
   await Shop.insertMany(shops)
   console.log('Shops seeded successfully!')
-
   mongoose.disconnect()
 }
 
