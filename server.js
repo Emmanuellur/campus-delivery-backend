@@ -39,7 +39,7 @@ app.get('/seed', async (req, res) => {
       ]
     },
     {
-      name: 'Campus Pharmacy', category: 'pharmacy', emoji: '💊',
+      name: 'Remisix wellness', category: 'pharmacy', emoji: '💊',
       image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400',
       eta: 10, rating: 4.8,
       items: [
@@ -50,8 +50,8 @@ app.get('/seed', async (req, res) => {
       ]
     },
     {
-      name: 'Chukwu Kitchen', category: 'food', emoji: '🍲',
-      image: 'https://images.unsplash.com/photo-1547592180-85f173990554?w=400',
+      name: 'Yeshua Kitchen', category: 'food', emoji: '🍲',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScqF5tRE2gw6mKUUoK4VAsJNttIJBT6TocA6foLGBqVw&s=10',
       eta: 20, rating: 4.2,
       items: [
         { name: 'Pepper Soup', price: 600, time: 10 },
@@ -70,8 +70,8 @@ app.get('/seed', async (req, res) => {
       ]
     },
     {
-      name: 'Buka Express', category: 'food', emoji: '🍱',
-      image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400',
+      name: 'Buka 9ine kitchen', category: 'food', emoji: '🍱',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN81vro8ZqIVIkdWDCt2Q-ugCcbob3XB-cE3Rs-BU4St1lMh-GK4l9HFU&s=10',
       eta: 25, rating: 4.0,
       items: [
         { name: 'Rice + Stew', price: 600, time: 10 },
@@ -80,8 +80,8 @@ app.get('/seed', async (req, res) => {
       ]
     },
     {
-      name: 'Freshy Bites', category: 'food', emoji: '🥙',
-      image: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400',
+      name: 'Lala Sandwich', category: 'food', emoji: '🥙',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7WtoBBrXQnigZRGECT86pjcPpxtedk0oaqSVzxx7nsw&s=10',
       eta: 18, rating: 4.3,
       items: [
         { name: 'Shawarma', price: 1200, time: 8 },
