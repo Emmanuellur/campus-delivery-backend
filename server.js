@@ -28,8 +28,8 @@ app.get('/seed', async (req, res) => {
   const Shop = require('./models/Shop')
   const shops = [
     {
-      name: 'Mama Put Canteen', category: 'food', emoji: '🍛',
-      image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400',
+      name: 'Madam Blessing Canteen', category: 'food', emoji: '🍛',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS9YFCCIRs6EnphCUkm3NBFgjxg8OoaLRehd8-l3nj0g&s=10',
       eta: 15, rating: 4.5,
       items: [
         { name: 'Jollof Rice + Chicken', price: 800, time: 10 },
